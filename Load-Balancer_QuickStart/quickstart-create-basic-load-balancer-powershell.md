@@ -29,9 +29,9 @@ The Azure Cloud Shell is a free interactive shell that you can use to run the st
 
 If you choose to install and use PowerShell locally, this article requires the Azure PowerShell module version 5.4.1 or later. Run `Get-Module -ListAvailable AzureRM` to find the installed version. If you need to upgrade, see [Install Azure PowerShell module](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps). If you are running PowerShell locally, you also need to run `Login-AzureRmAccount` to create a connection with Azure. 
 
-## Create a resource group
+## Configure resource group information
 
-Before you can create your load balancer, you must Select a resource group with [Get-AzureRmResourceGroup](https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/get-azurermresourcegroup). The following example sets variables to represent a resource group name *your-resource-group-name* in the *SoutheastAsia* location that will be used throughtout the rest of the QuickStart:
+Before you can create your load balancer, you must select a resource group to deploy the resource to. The following example sets variables to represent a resource group name *your-resource-group-name* in the location *SoutheastAsia* that will be used throughtout the rest of the QuickStart:
 
 ```azurepowershell-interactive
 $ResourceGroupName = "your-resource-group-name"
