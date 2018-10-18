@@ -259,7 +259,7 @@ for ($i=1; $i -le 2; $i++)
     New-AzureRmVm `
         -ResourceGroupName $ResourceGroupName `
         -Name "myVM$i" `
-        -Location $ResourceGroupName `
+        -Location $Location `
         -VirtualNetworkName "myVnet" `
         -SubnetName "mySubnet" `
         -SecurityGroupName "myNetworkSecurityGroup" `
